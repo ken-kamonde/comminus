@@ -1,0 +1,76 @@
+<div>
+    <h1 class="configurator-headings">Package Details</h1>
+    <mat-list class="topping-container">
+        <!-- <mat-list-item class="clickable topping" [ngClass]="{'selected': pickedToppings.indexOf(package)!==-1}" *ngFor='let package of packagesObservable |async' (click)='setPickedToppings(package)'> -->
+
+        <mat-list-item class="clickable topping" *ngFor='let parcel of parcelsObservable |async'>
+            <mat-list class="topping-inner-container">
+                <mat-list-item class="image-div">
+                    <img src="https://res.cloudinary.com/ximmoz-corp/image/upload/v1633695554/comminus/delivery-package.svg" alt="">
+                </mat-list-item>
+                <mat-list-item>
+                    <h1>{{parcel.Name}}</h1>
+                </mat-list-item>
+                <mat-list-item>
+                    <p> {{parcel.Sender}} </p>
+                </mat-list-item>
+                <mat-list-item>
+                    <button class="clickable" matButton (click)="packageDetails()">Details</button>
+                </mat-list-item>
+            </mat-list>
+        </mat-list-item>
+
+
+
+        <mat-list-item class="clickable topping">
+            <mat-list class="topping-inner-container">
+                <mat-list-item class="image-div">
+                    <img src="https://res.cloudinary.com/ximmoz-corp/image/upload/v1633695554/comminus/delivery-package.svg" alt="">
+                </mat-list-item>
+                <mat-list-item>
+                    <h1>Laptop</h1>
+                </mat-list-item>
+                <mat-list-item>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </mat-list-item>
+                <mat-list-item>
+                    <button class="clickable" matButton>Details</button>
+                </mat-list-item>
+            </mat-list>
+        </mat-list-item>
+        <mat-list-item class="clickable topping">
+            <mat-list class="topping-inner-container">
+                <mat-list-item class="image-div">
+                    <img src="https://res.cloudinary.com/ximmoz-corp/image/upload/v1633695554/comminus/delivery-package.svg" alt="">
+                </mat-list-item>
+                <mat-list-item>
+                    <h1>Laptop</h1>
+                </mat-list-item>
+                <mat-list-item>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </mat-list-item>
+                <mat-list-item>
+                    <button class="clickable" matButton>Details</button>
+                </mat-list-item>
+            </mat-list>
+        </mat-list-item>
+        <mat-list-item class="clickable topping">
+            <mat-list class="topping-inner-container">
+                <mat-list-item class="image-div">
+                    <img src="https://res.cloudinary.com/ximmoz-corp/image/upload/v1633695554/comminus/delivery-package.svg" alt="">
+                </mat-list-item>
+                <mat-list-item>
+                    <h1>Laptop</h1>
+                </mat-list-item>
+                <mat-list-item>
+                    <p>Lorem ipsum dolor sit amet </p>
+                </mat-list-item>
+                <mat-list-item>
+                    <button class="clickable" matButton>Details</button>
+                </mat-list-item>
+            </mat-list>
+        </mat-list-item>
+
+
+    </mat-list>
+</div>
